@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" sizes="32x32" type="image/x-icon" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
@@ -12,60 +12,63 @@
   <title>FEM News Homepage</title>
 </head>
 <body>
-  <header>
-    <img src="./assets/images/logo.svg" alt="new's logo" />
-    <nav>
+  <header class="header">
+    <img class="header__image" src="./assets/images/logo.svg" alt="new's logo" />
+    <nav class="navbar">
       <ul>
-        <li>Home</li>
-        <li>New</li>
-        <li>Popular</li>
-        <li>Trending</li>
-        <li>Categories</li>
+        <li class="navbar__content">Home</li>
+        <li class="navbar__content">New</li>
+        <li class="navbar__content">Popular</li>
+        <li class="navbar__content">Trending</li>
+        <li class="navbar__content">Categories</li>
       </ul>
     </nav>
   </header>
   <main>
-    <section>
-      <img src="./assets/images/image-web-3-mobile.jpg" alt="">
-      <h1>The Bright Future of Web 3.0?</h1>
-      <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
-      <button type="button">Read more</button>
+    <section class="intro">
+      <img src="./assets/images/image-web-3-mobile.jpg" alt="" class="intro__image" />
+      <h1 class="intro__title">The Bright Future of Web 3.0?</h1>
+      <p class="intro__description">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+      <button type="button" class="intro__button">Read more</button>
     </section>
-    <section>
-      <h2>New</h2>
-      <article>
-        <h3>Hydrogen VS Electric Cars</h3>
-        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+    <section class="new-section">
+      <h2 class="new-section__title">New</h2>
+      <article class="new-section__article">
+        <h3 class="new-section__article-heading">Hydrogen VS Electric Cars</h3>
+        <p class="new-section__article-description">Will hydrogen-fueled cars ever catch up to EVs?</p>
       </article>
-      <article>
-        <h3>The Downsides of AI Artistry</h3>
-        <p>What are the possible adverse effects of on-demand AI image generation?</p>
+      <article class="new-section__article">
+        <h3 class="new-section__article-heading">The Downsides of AI Artistry</h3>
+        <p class="new-section__article-description">What are the possible adverse effects of on-demand AI image generation?</p>
       </article>
-      <article>
-        <h3>Is VC Funding Drying Up?</h3>
-        <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      <article class="new-section__article">
+        <h3 class="new-section__article-heading">Is VC Funding Drying Up?</h3>
+        <p class="new-section__article-description">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
       </article>
     </section>
-    <section>
+    <section class="hot-topics">
       <article>
-        <img src="./assets/images/image-retro-pcs.jpg" alt="A mini 1980s PC model" />
-        <h2>01</h2>
-        <h3>Reviving Retro PCs</h3>
-        <p>What happens when old PCs are given modern upgrades?</p>
+        <img src="./assets/images/image-retro-pcs.jpg" alt="A mini 1980s PC model" class="hot-topics__image" />
+        <h2 class="hot-topics__number">01</h2>
+        <h3 class="hot-topics__heading">Reviving Retro PCs</h3>
+        <p class="hot-topics__description">What happens when old PCs are given modern upgrades?</p>
       </article>
       <article>
-        <img src="./assets/images/image-top-laptops.jpg" alt="Laptop keyboard with red RGB" />
-        <h2>02</h2>
-        <h3>Top 10 Laptops of 2022</h3>
-        <p>Our best picks for various needs and budgets.</p>
+        <img src="./assets/images/image-top-laptops.jpg" alt="Laptop keyboard with red RGB" class="hot-topics__image" />
+        <h2 class="hot-topics__number">02</h2>
+        <h3 class="hot-topics__heading">Top 10 Laptops of 2022</h3>
+        <p class="hot-topics__description">Our best picks for various needs and budgets.</p>
       </article>
       <article>
-        <img src="./assets/images/image-gaming-growth.jpg" alt="PlayStation 5 controller hovering over a hand" />
-        <h2>03</h2>
-        <h3>The Growth of Gaming</h3>
-        <p>How the pandemic has sparked fresh opportunities.</p>
+        <img src="./assets/images/image-gaming-growth.jpg" alt="PlayStation 5 controller hovering over a hand" class="hot-topics__image" />
+        <h2 class="hot-topics__number">03</h2>
+        <h3 class="hot-topics__heading">The Growth of Gaming</h3>
+        <p class="hot-topics__description">How the pandemic has sparked fresh opportunities.</p>
       </article>
     </section>
   </main>
+  <footer class="footer">
+    <p class="footer__text">Challenge by <a class="footer__link" href="https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl" target="_blank" rel="noopener">Frontend Mentor</a>. <\> with 💚 by <a class="footer__link" href="https://github.com/salvarez96" target="_blank" rel="noopener">Santiago Alvarez</a></p>
+  </footer>
 </body>
 </html>
