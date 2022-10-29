@@ -3,10 +3,10 @@
   --regular: 400;
   --bold: 700;
   --bolder: 800;
-  /* Primary */
+  /* Primary colors */
   --soft-orange: hsl(35,77%,62%);
   --soft-red: hsl(5, 85%, 63%);
-  /* Neutral */
+  /* Neutral colors */
   --off-white: hsl(36, 100%, 99%);
   --grayish-blue: hsl(233, 8%, 79%);
   --drak-grayish-blue: hsl(236, 13%, 42%);
@@ -19,10 +19,6 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 6.25%;
-}
-
 body {
-  font-size: 15rem;
+  font-family: 'Inter', 'sans-serif';
 }
