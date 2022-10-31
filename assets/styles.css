@@ -9,7 +9,7 @@
   /* Neutral colors */
   --off-white: hsl(36, 100%, 99%);
   --grayish-blue: hsl(233, 8%, 79%);
-  --drak-grayish-blue: hsl(236, 13%, 42%);
+  --dark-grayish-blue: hsl(236, 13%, 42%);
   --very-dark-blue: hsl(240, 100%, 5%);
 }
 
@@ -21,4 +21,53 @@
 
 body {
   font-family: 'Inter', 'sans-serif';
+  font-size: calc(15rem / 16);
+  margin: 0 4%;
+}
+
+.header {
+  min-height: 90px;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p {
+  color: var(--dark-grayish-blue);
+  font-weight: var(--regular);
+  line-height: calc(22rem / 16);
+  padding: 1.3em 0;
+}
+
+.header__logo {
+  width: 55px;
+}
+.navbar__content{
+  display: inline-block;
+  text-decoration: none;
+}
+
+.main-image {
+  width: 100%;
+}
+
+.intro {
+  margin: 25px 0;
+}
+
+.intro__title {
+  font-weight: var(--bolder);
+  font-size: calc(42rem / 16);
+  line-height: calc(43rem / 16);
+}
+
+.intro__button {
+  padding: 12px 30px;
+  border: 0;
+  background-color: var(--soft-red);
+  color: var(--off-white);
+  font-weight: var(--bold);
+  letter-spacing: calc(5rem / 16);
 }
