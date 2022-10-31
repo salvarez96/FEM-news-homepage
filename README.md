@@ -5,6 +5,8 @@ Frontend Mentor [News Homepage challenge](https://www.frontendmentor.io/challeng
 #### Main goal:
 - Build a News homepage that looks like this:
   - Desktop:
+  
     ![desktop preview](./FEM-files/design/desktop-design.jpg)
   - Mobile:
+  
     ![mobile preview](./FEM-files/design/mobile-design.jpg)
