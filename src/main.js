@@ -1,6 +1,6 @@
 const main = document.querySelector('main');
 const header = document.querySelector('.header');
-const navImg = document.querySelector('.navbar');
+const nav = document.querySelector('.navbar');
 const navMenu = document.createElement('div');
 const closeMenu = document.createElement('img');
 const listNavItems = document.createElement('ul');
@@ -15,20 +15,25 @@ const navItemsToAppend = navItems.map(item => {
   listItems.innerHTML = item;
   listNavItems.appendChild(listItems);
 });
-navMenu.append(closeMenu, listNavItems);
 
-const closeMenuFunction = () => {
-  if(navMenu.parentNode === document.body){
-    document.body.removeChild(navMenu);
+if(this.innerWidth < 650){
+  navMenu.append(closeMenu, listNavItems);
+  
+  const closeMenuFunction = () => {
+    if(navMenu.parentNode === document.body){
+      document.body.removeChild(navMenu);
+    }
+    document.body.removeAttribute('style');
+    main.removeEventListener('click', closeMenuFunction);
   }
-  document.body.removeAttribute('style');
-  main.removeEventListener('click', closeMenuFunction);
+  
+  nav.addEventListener('click', () => {
+    header.insertAdjacentElement('beforebegin', navMenu);
+    document.body.style.overflow = 'hidden';
+    main.addEventListener('click', closeMenuFunction);
+  });
+  
+  closeMenu.addEventListener('click', closeMenuFunction);
+} else if (this.innerWidth > 900) {
+  nav.append(listNavItems);
 }
-
-navImg.addEventListener('click', () => {
-  header.insertAdjacentElement('beforebegin', navMenu);
-  document.body.style.overflow = 'hidden';
-  main.addEventListener('click', closeMenuFunction);
-});
-
-closeMenu.addEventListener('click', closeMenuFunction);
