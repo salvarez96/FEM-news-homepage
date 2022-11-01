@@ -1,3 +1,4 @@
+const main = document.querySelector('main');
 const header = document.querySelector('.header');
 const navImg = document.querySelector('.navbar');
 const navMenu = document.createElement('div');
@@ -16,17 +17,18 @@ const navItemsToAppend = navItems.map(item => {
 });
 navMenu.append(closeMenu, listNavItems);
 
+const closeMenuFunction = () => {
+  if(navMenu.parentNode === document.body){
+    document.body.removeChild(navMenu);
+  }
+  document.body.removeAttribute('style');
+  main.removeEventListener('click', closeMenuFunction);
+}
+
 navImg.addEventListener('click', () => {
   header.insertAdjacentElement('beforebegin', navMenu);
-  navMenu.style.height = '100%';
-  document.body.style.backgroundColor = 'rgba(0,0,0,0.5)';
   document.body.style.overflow = 'hidden';
-  header.style.backgroundColor = 'rgba(0,0,0,0)';
+  main.addEventListener('click', closeMenuFunction);
 });
 
-closeMenu.addEventListener('click', () => {
-  document.body.removeChild(navMenu);
-  navMenu.style.height = '0';
-  document.body.removeAttribute('style');
-  header.style.backgroundColor = 'var(--off-white)';
-});
+closeMenu.addEventListener('click', closeMenuFunction);
