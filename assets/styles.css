@@ -51,6 +51,14 @@ p {
   text-decoration: none;
 }
 
+.navbar__content:hover, .intro__button:hover, h3:hover{
+  cursor: pointer;
+}
+
+.navbar__content:hover {
+  color: var(--soft-orange);
+}
+
 .main-image {
   margin: 0 auto;
   width: 345px;
@@ -82,6 +90,10 @@ p {
   letter-spacing: calc(5rem / 16);
 }
 
+.intro__button:hover {
+  background-color: var(--very-dark-blue);
+}
+
 .new-section {
   width: 345px;
   margin: 45px 0;
@@ -99,6 +111,10 @@ p {
   padding-top: 25px;
   letter-spacing: calc(1rem / 16);
   color: var(--off-white);
+}
+
+.new-section__article-heading:hover {
+  color: var(--soft-orange);
 }
 
 .new-section__article-description {
@@ -143,6 +159,10 @@ p {
   font-weight: var(--bolder);
 }
 
+.hot-topics__article-heading:hover {
+  color: var(--soft-red);
+}
+
 .footer {
   margin-top: 25px;
   display: flex;
@@ -156,4 +176,8 @@ p {
 
 .footer__text, .footer__link {
   color: var(--grayish-blue);
+}
+
+.footer__link:hover {
+  color: var(--soft-orange);
 }
