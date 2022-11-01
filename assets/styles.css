@@ -25,6 +25,12 @@ body {
   margin: 0 4%;
 }
 
+p {
+  color: var(--dark-grayish-blue);
+  font-weight: var(--regular);
+  line-height: calc(25rem / 16);
+}
+
 .header {
   min-height: 90px;
   width: 100%;
@@ -34,14 +40,8 @@ body {
   align-items: center;
 }
 
-p {
-  color: var(--dark-grayish-blue);
-  font-weight: var(--regular);
-  line-height: calc(25rem / 16);
-}
-
 .header__logo {
-  width: 55px;
+  width: 45px;
 }
 
 .navbar__content{
@@ -50,7 +50,11 @@ p {
 }
 
 .main-image {
-  width: 100%;
+  margin: 0 auto;
+  width: 345px;
+  height: 302px;
+  background: url('./images/image-web-3-mobile.jpg');
+  background-size: contain;
 }
 
 .intro {
