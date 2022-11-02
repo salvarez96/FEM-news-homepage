@@ -8,6 +8,7 @@ const navItems = ['Home', 'New', 'Popular', 'Trending', 'Categories'];
 
 navMenu.className = 'navbar__menu';
 closeMenu.setAttribute('src', '../assets/images/icon-menu-close.svg');
+closeMenu.setAttribute('alt', 'close navigation button');
 
 const navItemsToAppend = navItems.map(item => {
   const listItems = document.createElement('li');
